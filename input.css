@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --green: 75 94% 57%;
+    --gray: 0 0% 20%;
+    --darkgray: 0 0% 12%;
+    --offblack: 0 0% 8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply min-w-0;
+  }
+  html,
+  body {
+    @apply h-full;
+  }
+  body {
+    @apply font-inter scroll-smooth bg-offblack text-[14px] text-neutral-950 antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-balance font-bold;
+  }
+  h1 {
+    @apply text-2xl font-semibold;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-[1.75rem] leading-none;
+  }
+  p {
+    @apply text-pretty;
+  }
+}
