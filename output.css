@@ -464,9 +464,10 @@ body {
   scroll-behavior: smooth;
   background-color: hsl(var(--offblack));
   font-family: Inter, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgb(10 10 10 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -484,6 +485,7 @@ h1,
 h1 {
   font-size: 1.5rem;
   line-height: 2rem;
+  font-weight: 600;
 }
 
 h2 {
@@ -779,10 +781,6 @@ p {
   margin-top: 0.5rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -920,14 +918,6 @@ p {
 
 .w-full {
   width: 100%;
-}
-
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
 }
 
 .max-w-sm {
@@ -1915,12 +1905,12 @@ p {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-gray {
-  background-color: hsl(var(--gray));
-}
-
 .bg-darkgray {
   background-color: hsl(var(--darkgray));
+}
+
+.bg-gray {
+  background-color: hsl(var(--gray));
 }
 
 .decoration-slice {
@@ -2041,10 +2031,6 @@ p {
   padding: 1.5rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2104,11 +2090,6 @@ p {
 
 .align-super {
   vertical-align: super;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -2192,13 +2173,13 @@ p {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-green {
+  color: hsl(var(--green));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-green {
-  color: hsl(var(--green));
 }
 
 .underline {
@@ -2501,12 +2482,6 @@ p {
   transition-duration: 150ms;
 }
 
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2578,10 +2553,6 @@ p {
   }
 }
 
-.hover\:bg-gray:hover {
-  background-color: hsl(var(--gray));
-}
-
 .hover\:bg-gray\/60:hover {
   background-color: hsl(var(--gray) / 0.6);
 }
@@ -2616,12 +2587,6 @@ p {
 
 @media (min-width: 1024px) {
   .lg\:p-10 {
-    padding: 2.5rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:p-10 {
     padding: 2.5rem;
   }
 }

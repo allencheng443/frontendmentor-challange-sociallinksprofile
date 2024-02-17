@@ -20,7 +20,7 @@
     @apply h-full;
   }
   body {
-    @apply font-inter scroll-smooth bg-offblack text-[14px] text-neutral-950 antialiased;
+    @apply scroll-smooth bg-offblack font-inter text-sm text-white antialiased;
   }
   h1,
   h2,
